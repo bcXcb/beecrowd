@@ -7,18 +7,18 @@ int main() {
     char o;
     const int ORDER = 7;
     double m[ORDER][ORDER];
+
+    //cin >> o;
+    o = 'S';
     
-    cin >> o;
-    
-    // fill the matrix
     int c = 1;
     for (int i = 0; i < ORDER; i++) {
         for (int j = 0; j < ORDER; j++) {
-            cin >> m[i][j];
+            //cin >> m[i][j];
+            m[i][j] = c++;
         }
     }
     
-    // calculate the sum
     double sum = 0;
     int p = 1;
     int q = ORDER - 1;
