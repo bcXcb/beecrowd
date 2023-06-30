@@ -1,75 +1,41 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
-    double a;
-    double b;
-    double c;
-    double o1;
-    double o2;
-    double o3;
+    double* v = (double*) malloc(3 * sizeof(double));
 
-    scanf("%lf%lf%lf", &a, &b, &c);
+    scanf("%lf %lf %lf", &*v, &*(v + 1), &*(v + 2));
 
-    if (a > b) {
-        if (a > c) {
-            o1 = a;
-            if (b > c) {
-                o2 = b;
-                o3 = c;
-            } else {
-                o2 = c;
-                o3 = b;
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (*(v + i) > *(v + j)) {
+                *(v + i) = *(v + i) + *(v + j);
+                *(v + j) = *(v + i) - *(v + j);
+                *(v + i) = *(v + i) - *(v + j);
             }
-        } else {
-            o1 = c;
-            o2 = a;
-            o3 = b;
-        }
-    } else {
-        if (a < c) {
-            o3 = a;
-            if (b > c) {
-                o1 = b;
-                o2 = c;
-            } else {
-                o1 = c;
-                o2 = b;
-            }
-        } else {
-            o1 = b;
-            o2 = a;
-            o3 = c;
         }
     }
 
-    a = o1;
-    b = o2;
-    c = o3;
-
-    if (a >= b + c || b >= a + c || c >= a + b) {
+    if (*v >= *(v + 1) + *(v + 2) || *(v + 1) >= *v + *(v + 2) || *(v + 2) >= *v + *(v + 1)) {
         puts("NAO FORMA TRIANGULO");
     } else {
-        a = a * a;
-        b = b * b;
-        c = c * c;
+        *v = *v * *v;
+        *(v + 1) = *(v + 1) * *(v + 1);
+        *(v + 2) = *(v + 2) * *(v + 2);
 
-        if (a == b + c || b == a + c || c == a + b) {
+        if (*v == *(v + 1) + *(v + 2) || *(v + 1) == *v + *(v + 2) || *(v + 2) == *v + *(v + 1)) {
             puts("TRIANGULO RETANGULO");
-        } else if (a > b + c || b > a + c || c > a + b) {
+        } else if (*v > *(v + 1) + *(v + 2) || *(v + 1) > *v + *(v + 2) || *(v + 2) > *v + *(v + 1)) {
             puts("TRIANGULO OBTUSANGULO");
         } else {
             puts("TRIANGULO ACUTANGULO");
         }
 
-        a = o1;
-        b = o2;
-        c = o3;
-
-        if (a == b && a == c && b == c) {
+        if (*v == *(v + 1) && *v == *(v + 2) && *(v + 1) == *(v + 2)) {
             puts("TRIANGULO EQUILATERO");
         }
-        if ((a == b && a != c) || (a == c && a != b) ||
-        (b == c && b != a)) {
+        if ((*v == *(v + 1) && *v != *(v + 2)) || (*v == *(v + 2) && *v != *(v + 1)) ||
+        (*(v + 1) == *(v + 2) && *(v + 1) != *v)) {
             puts("TRIANGULO ISOSCELES");
         }
     }
