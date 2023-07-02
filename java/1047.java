@@ -4,48 +4,57 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws IOException {
         Scanner input = new Scanner(System.in);
-        int hi, mi, hf, mf, hd, md, mmm, mmi, mmf, r;
+        int horaInicial, minutoInicial, horaFinal, minutoFinal, horaDuracao, minutoDuracao;
 
-        hi = input.nextInt();
-        mi = input.nextInt();
-        hf = input.nextInt();
-        mf = input.nextInt();
+        /* x==================================x
+          |          não confundir           |
+          x==================================x
+          | minutosInicial != minutoInicial  |
+          | minutosFinal   != minutoFinal    |
+          x==================================x */
 
-        if (hf > hi) {
-            if (mf == mi) {
-                hd = hf - hi;
-                md = 0;
-            } else if (mf > mi) {
-                hd = hf - hi;
-                md = mf - mi;
+        horaInicial = input.nextInt();
+        minutoInicial = input.nextInt();
+        horaFinal = input.nextInt();
+        minutoFinal = input.nextInt();
+
+        if (horaFinal > horaInicial) {
+            if (minutoFinal == minutoInicial) {
+                horaDuracao = horaFinal - horaInicial;
+                minutoDuracao = 0;
+            } else if (minutoFinal > minutoInicial) {
+                horaDuracao = horaFinal - horaInicial;
+                minutoDuracao = minutoFinal - minutoInicial;
             } else {
-                if (hf - hi == 1) {
-                    hd = 0;
-                    md = 69 - mi;
+                if (horaFinal - horaInicial == 1) {
+                    horaDuracao = 0;
+                    minutoDuracao = 69 - minutoInicial;
                 } else {
-                    hd = hf - hi - 1;
-                    md = 70 - mi;
+                    horaDuracao = horaFinal - horaInicial - 1;
+                    minutoDuracao = 70 - minutoInicial;
                 }
             }
-        } else if (hf < hi) {
-            mmi = hi * 60 + mi;
-            mmf = hf * 60 + mf;
-            mmm = (24 * 60) - mmi + mmf;
-            md = mmm % 60;
-            hd = mmm / 60;
+        } else if (horaFinal < horaInicial) {
+            int minutosInicial, minutosFinal, minutosDuracaoTotal;
+            
+            minutosInicial = horaInicial * 60 + minutoInicial;
+            minutosFinal = horaFinal * 60 + minutoFinal;
+            minutosDuracaoTotal = (24 * 60) - minutosInicial + minutosFinal;
+            minutoDuracao = minutosDuracaoTotal % 60;
+            horaDuracao = minutosDuracaoTotal / 60;
         } else {
-            if (mf > mi) {
-                hd = 0;
-                md = mf - mi;
-            } else if (mf < mi) {
-                hd = 23;
-                md = 60 - (mi - mf);
+            if (minutoFinal > minutoInicial) {
+                horaDuracao = 0;
+                minutoDuracao = minutoFinal - minutoInicial;
+            } else if (minutoFinal < minutoInicial) {
+                horaDuracao = 23;
+                minutoDuracao = 60 - (minutoInicial - minutoFinal);
             } else {
-                hd = 24;
-                md = 0;
+                horaDuracao = 24;
+                minutoDuracao = 0;
             }
         }
 
-        System.out.printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", hd, md);
+        System.out.printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", horaDuracao, minutoDuracao);
     }
 }
