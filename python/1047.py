@@ -1,11 +1,4 @@
-values = input().split(' ')
-
-hi, mi, hf, mf = values
-
-hi = int(hi)
-mi = int(mi)
-hf = int(hf)
-mf = int(mf)
+hi, mi, hf, mf = map(int, input().split())
     
 if (hf > hi):
     if (mf == mi):
