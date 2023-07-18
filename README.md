@@ -6,15 +6,15 @@ Link for the profile: <a href="https://www.beecrowd.com.br/judge/pt/profile/8532
 
 ## Solved problems
 
-| Category                 | Solved     | Posted | Total of problems  |
+| Category                 | Posted     | Solved | Total of problems  |
 |--------------------------|------------|--------|--------------------|
-| Iniciante                | ---        | ---    | 336                |
-| Ad-Hoc                   | ---        | ---    | 823                |
-| Strings                  | ---        | ---    | 148                |
-| Estruturas e Bibliotecas | ---        | ---    | 179                |
-| Matemática               | ---        | ---    | 269                |
-| Paradigmas               | ---        | ---    | 215                |
-| Grafos                   | ---        | ---    | 277                |
-| Geometria Computacional  | ---        | ---    | 82                 |
-| SQL                      | ---        | ---    | 46                 |
-| Total                    | 215        | 193    | 2375               |
+| Iniciante                | 176        | 193    | 336                |
+| Ad-Hoc                   | 14         | 14     | 823                |
+| Strings                  | 1          | 1      | 148                |
+| Estruturas e Bibliotecas | 0          | 0      | 179                |
+| Matemática               | 0          | 0      | 269                |
+| Paradigmas               | 0          | 0      | 215                |
+| Grafos                   | 0          | 0      | 277                |
+| Geometria Computacional  | 0          | 0      | 82                 |
+| SQL                      | 2          | 7      | 46                 |
+| Total                    | 193 (273)  | 215    | 2375               |
