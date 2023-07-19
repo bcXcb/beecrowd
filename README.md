@@ -9,7 +9,7 @@ Link for the profile: <a href="https://www.beecrowd.com.br/judge/pt/profile/8532
 | Category                 | Posted     | Solved | Total of problems  |
 |--------------------------|------------|--------|--------------------|
 | Iniciante                | 176        | 193    | 336                |
-| Ad-Hoc                   | 14         | 14     | 823                |
+| Ad-Hoc                   | 16         | 16     | 823                |
 | Strings                  | 1          | 1      | 148                |
 | Estruturas e Bibliotecas | 0          | 0      | 179                |
 | Matemática               | 0          | 0      | 269                |
