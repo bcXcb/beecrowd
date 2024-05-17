@@ -1,20 +1,20 @@
 # Beecrowd
 
-Solutions of problems of the Beecrowd.
+Soluções de problemas do Beecrowd.
 
-Link for the profile: <a href="https://www.beecrowd.com.br/judge/pt/profile/853225">link</a>.
+<a href="https://www.beecrowd.com.br/judge/pt/profile/853225">Ir ao perfil.</a>
 
-## Solved problems
+## Estatísticas
 
-| Category                 | Posted     | Solved | Total of problems  |
-|--------------------------|------------|--------|--------------------|
-| Iniciante                | 176        | 193    | 336                |
-| Ad-Hoc                   | 16         | 16     | 823                |
-| Strings                  | 1          | 1      | 148                |
-| Estruturas e Bibliotecas | 0          | 0      | 179                |
-| Matemática               | 0          | 0      | 269                |
-| Paradigmas               | 0          | 0      | 215                |
-| Grafos                   | 0          | 0      | 277                |
-| Geometria Computacional  | 0          | 0      | 82                 |
-| SQL                      | 2          | 7      | 46                 |
-| Total                    | 195        | 217    | 2375               |
+| Categoria                | Resolvidos | Total |
+| ------------------------ | ---------- | ----- |
+| Iniciante                | 193        | 334   |
+| Ad-Hoc                   | 21         | 849   |
+| Strings                  | 1          | 150   |
+| Estruturas e Bibliotecas |            | 179   |
+| Matemática               |            | 269   |
+| Paradigmas               |            | 215   |
+| Grafos                   |            | 277   |
+| Geometria Computacional  |            | 83    |
+| SQL                      |            | 50    |
+| Total                    |            | 2406  |
