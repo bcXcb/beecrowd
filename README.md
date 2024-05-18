@@ -9,12 +9,12 @@ Soluções de problemas do Beecrowd.
 | Categoria                | Resolvidos | Total |
 | ------------------------ | ---------- | ----- |
 | Iniciante                | 193        | 334   |
-| Ad-Hoc                   | 21         | 849   |
+| Ad-Hoc                   | 22         | 849   |
 | Strings                  | 1          | 150   |
 | Estruturas e Bibliotecas |            | 179   |
 | Matemática               |            | 269   |
 | Paradigmas               |            | 215   |
 | Grafos                   |            | 277   |
 | Geometria Computacional  |            | 83    |
-| SQL                      |            | 50    |
-| Total                    |            | 2406  |
+| SQL                      | 7          | 50    |
+| Total                    | 216        | 2406  |
