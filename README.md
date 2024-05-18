@@ -17,4 +17,4 @@ Soluções de problemas do Beecrowd.
 | Grafos                   |            | 277   |
 | Geometria Computacional  |            | 83    |
 | SQL                      | 7          | 50    |
-| Total                    | 216        | 2406  |
+| Total                    | 223        | 2406  |
