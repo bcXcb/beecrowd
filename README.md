@@ -9,7 +9,7 @@ Soluções de problemas do Beecrowd.
 | Categoria                | Resolvidos | Total |
 | ------------------------ | ---------- | ----- |
 | Iniciante                | 193        | 334   |
-| Ad-Hoc                   | 22         | 849   |
+| Ad-Hoc                   | 26         | 849   |
 | Strings                  | 1          | 150   |
 | Estruturas e Bibliotecas |            | 179   |
 | Matemática               |            | 269   |
@@ -17,4 +17,4 @@ Soluções de problemas do Beecrowd.
 | Grafos                   |            | 277   |
 | Geometria Computacional  |            | 83    |
 | SQL                      | 7          | 50    |
-| Total                    | 223        | 2406  |
+| Total                    | 227        | 2406  |
